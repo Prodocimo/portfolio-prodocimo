@@ -8,23 +8,45 @@
     <link rel="stylesheet" href="/assets/style/style.css">
 </head>
 <body>
-    <!-- Elementos decorativos -->
-    <div class="planet planet-1"></div>
-    <div class="planet planet-2"></div>
-
     <!-- Navegação -->
-    <nav>
-        <ul>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#contato">Contato</a></li>
-        </ul>
-    </nav>
+    <header>
+        <h1>Prodocimo</h1>
+        <div class="menu-btn">
+            <div></div>
+            <div class="cute"></div>
+            <div></div>
+        </div>
+        <nav class="nav-desktop">
+            <ul class="nav-desktop-ul">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="nav-modal"> <!-- só aparece no mobile -->
+       <nav class="nav-mobile">
+            <ul class="nav-mobile-ul">
+                <li>
+                    <a href="#sobre" class="link-menu"><span><img src="assets/ico/user-regular-full.svg" alt="User"></span>Sobre Mim</a>
+                </li>
 
+                <li>
+                    <a href="#projetos" class="link-menu">
+                        <span><img src="assets/ico/folder-open-regular-full.svg" alt="Folder"></span>Projetos
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#contato" class="link-menu"><span><img src="assets/ico/envelope-regular-full.svg" alt="Envelope"></span>Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    
     <!-- Seção Sobre -->
     <section id="sobre" class="about">
         <div class="container">
-            <div class="rocket"></div>
             <h1>Sobre Mim</h1>
             <p>Sou um desenvolvedor de software com experiência em criação de aplicações web e soluções inovadoras. Apaixonado por tecnologia e sempre em busca de novos desafios no universo da programação.</p>
         </div>
@@ -82,4 +104,5 @@
         </div>
     </section>
 </body>
+<script src="assets/js/menu-mobile.js"></script>
 </html>
