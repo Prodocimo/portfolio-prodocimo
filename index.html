@@ -11,28 +11,28 @@
     <!-- Navegação -->
     <header>
         <h1>Prodocimo</h1>
+        <nav class="nav-desktop">
+            <ul class="nav-desktop-ul">
+                <li><a href="#inicio">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li> 
+            </ul>
+        </nav>  
         <div class="menu-btn">
             <div class="deg-1"></div>
             <div class="cute"></div>
             <div class="deg-2"></div>
         </div>
-        <nav class="nav-desktop">
-            <ul class="nav-desktop-ul">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
     </header>
     <div class="nav-modal"> <!-- só aparece no mobile -->
        <nav class="nav-mobile">
             <ul class="nav-mobile-ul">
                 <li>
-                    <a href="#sobre" class="link-menu"><span><img src="assets/ico/user-regular-full.svg" alt="User"></span>Sobre Mim</a>
+                    <a href="#inicio" class="link-menu"><span><img src="assets/ico/user-regular-full.svg" alt="User"></span>Sobre Mim</a>
                 </li>
 
                 <li>
-                    <a href="#projetos" class="link-menu">
+                    <a href="#projects" class="link-menu">
                         <span><img src="assets/ico/folder-open-regular-full.svg" alt="Folder"></span>Projetos
                     </a>
                 </li>
@@ -44,65 +44,66 @@
         </nav>
     </div>
     
-    <!-- Seção Sobre -->
-    <section id="sobre" class="about">
+    <!-- Seção Inicio -->
+    <section id="inicio" class="init">
         <div class="container">
             <h1>Sobre Mim</h1>
             <p>Sou um desenvolvedor de software com experiência em criação de aplicações web e soluções inovadoras. Apaixonado por tecnologia e sempre em busca de novos desafios no universo da programação.</p>
         </div>
     </section>
 
-    <!-- Seção Projetos -->
-    <section id="projetos">
-        <div class="container">
-            <h2>Projetos</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">🚀</div>
-                    <div class="project-content">
-                        <h3>Projeto 1</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+    <main class="main-content">
+        <!-- Seção Projetos -->
+        <section id="projects" class="projects-content">
+            <div class="container">
+                <h2>Projetos</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">🚀</div>
+                        <div class="project-content">
+                            <h3>Projeto 1</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">🌟</div>
-                    <div class="project-content">
-                        <h3>Projeto 2</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        
+                    <div class="project-card">
+                        <div class="project-image">🌟</div>
+                        <div class="project-content">
+                            <h3>Projeto 2</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
                     </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-image">🛸</div>
-                    <div class="project-content">
-                        <h3>Projeto 3</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+        
+                    <div class="project-card">
+                        <div class="project-image">🛸</div>
+                        <div class="project-content">
+                            <h3>Projeto 3</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <!-- Seção Contato -->
-    <section id="contato">
-        <div class="container">
-            <h2>Contato</h2>
-            <form class="contact-form">
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
-                </div>
-                
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" placeholder="seu@email.com" required>
-                </div>
-                
-                <button type="submit">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
+        </section>
+        <!-- Seção Contato -->
+        <section id="contato">
+            <div class="container">
+                <h2>Contato</h2>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                    </div>
+        
+                    <div class="form-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+                    </div>
+        
+                    <button type="submit">Enviar Mensagem</button>
+                </form>
+            </div>
+        </section>
+    </main>
 </body>
 <script src="assets/js/menu-mobile.js"></script>
 </html>
